@@ -21,6 +21,12 @@ const config = {
         "indent": ["error", 4],
         "no-unused-vars": 1,
         "no-console": "off",
+        "no-param-reassign": ["error", {
+            props: true,
+            ignorePropertyModificationsFor: [
+                "state" // vuex
+            ]
+        }]
     }
 }
 module.exports = config
